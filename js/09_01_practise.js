@@ -43,7 +43,7 @@ const message = 'Введіть вашу кількість хромосом';
 let question = prompt(message);
 let answer;
 const conf = confirm(`Ваша відповідь - ${question}. Ви впевнені?`);
-const mark = prompt('Поставте оцінку нашому тесту, будь-ласка:)')
+// const mark = prompt('Поставте оцінку нашому тесту, будь-ласка:)')
 
 prompt(message);
 confirm(`Ваша відповідь - ${question}. Ви впевнені?`);
@@ -56,24 +56,8 @@ if (conf === true) {
 
 if (question == 47) {
     alert('Висновок: ви даун.');
-
     prompt('Поставте оцінку нашому тесту, будь-ласка:)');
-    console.log(mark);
+    console.log(prompt('Поставте оцінку нашому тесту, будь-ласка:)'));
 } else if (question != 47) {
     alert('Дивно, схоже, ви щось неправильно вписали, спробуйте ще раз.');
 }
-// while (question != 47) {
-//     question = prompt(message);
-//     prompt(message);
-//     console.log(question);
-//     answer = 'Неправильно!Спробуйте знову!';
-//     alert(answer);
-//     prompt(message);
-    
-//     if (question === 47) {
-//         break;
-//     }
-// } 
-
-// answer = 'Правильно!';
-// alert(answer);
