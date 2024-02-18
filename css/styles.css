@@ -1,0 +1,55 @@
+/* 
+.site-nav__link {
+    color: currentColor;
+    text-decoration: none;
+  }
+  
+  .site-nav__link:hover {
+    text-decoration: underline;
+  }
+  
+  .site-nav__link--current {
+    color: tomato;
+  }
+
+  .active {
+    font-size: 32px;
+    color: blue;
+  } */
+
+
+.article {
+  border: 3px solid green;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.title {
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: darkred;
+}
+
+.link {
+  text-decoration: none;
+  color: blueviolet;
+  margin-bottom: 30px;
+}
+
+.text {
+  color:aqua;
+
+}
+
+.color-picker__option {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,340 @@
+
+
+
+.start-window {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    display: none;
+}
+
+
+.article-title {
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.article-text {
+    width: 400px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 40px;
+}
+
+.buttons-container {
+    width: 500px;
+    height: 430px;
+    /* position: relative; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    
+    justify-content: space-between;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.button-item {
+    /* width: 200px; */
+    width: calc((100% - 4 * 30px) / 2);
+    height: 150px;
+    margin: 30px;
+}
+
+.UA {
+    width: 100%;
+    height: 100%;
+    border: 2px black solid;
+    border-radius: 20%;
+    background-image: linear-gradient(
+        to bottom,
+        blue 50%,
+        yellow 50%
+    );
+    cursor: pointer;
+    transition: all 250ms linear ;
+}
+
+.DE {
+    width: 100%;
+    height: 100%;
+    border: 2px black solid;
+    border-radius: 20%;
+    background-image: linear-gradient(
+        to bottom,
+        black 34%,
+        red 34% 67%,
+        yellow 67%
+    );
+    cursor: pointer;
+    transition: all 250ms linear ;
+}
+
+.EN {
+    width: 100%;
+    height: 100%;
+    border: 2px black solid;
+    border-radius: 20%;
+    background-image: 
+    url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    transition: all 250ms linear ;
+}
+
+.IT {
+    width: 100%;
+    height: 100%;
+    border: 2px black solid;
+    border-radius: 20%;
+    background-image: linear-gradient(
+        to right,
+        green 34%,
+        white 34% 67%,
+        red 67%
+    );
+    cursor: pointer;
+    transition: all 250ms linear ;
+}
+
+.DE-img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 0;
+    border-radius: 40px;
+    bottom: 200px;
+    left: 100px;
+    transition: all 250ms linear;
+}
+
+.UA-img {
+    width: 300px;
+    position: absolute;
+    opacity: 0;
+    border-radius: 40px;
+    bottom: 200px;
+    right: 100px;
+    transition: all 250ms linear;
+}
+
+.EN-img {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    opacity: 0;
+    border-radius: 40px;
+    bottom: 50px;
+    left: 100px;
+    transition: all 250ms linear;
+}
+
+.IT-img {
+    width: 300px;
+    position: absolute;
+    opacity: 0;
+    border-radius: 40px;
+    bottom: 50px;
+    right: 100px;
+    transition: all 250ms linear;
+}
+
+.UA:hover,
+.UA:focus,
+.DE:hover,
+.DE:focus,
+.EN:hover,
+.EN:focus,
+.IT:hover,
+.IT:focus {
+    scale: 1.2;
+}
+
+.DE:hover + .DE-img,
+.DE:focus + .DE-img {
+    opacity: 1;
+}
+
+.UA:hover + .UA-img,
+.UA.focus + .UA-img {
+    opacity: 1;
+}
+
+.EN:hover + .EN-img,
+.EN:hover + .EN-img {
+    opacity: 1;
+}
+
+.IT:hover + .IT-img,
+.IT:focus + .IT-img {
+    opacity: 1;
+}
+
+.answer-container {
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: none;
+}
+
+.answer-container > h1 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.answer-container > p {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.answer-container > button {
+    margin-top: 90px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    font-size: 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.answer-container > button:hover,
+.answer-container > button:focus {
+    background-color: lawngreen;
+}
+
+.question-article {
+    position: absolute;
+    border-radius: 40px;
+    box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.answers-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 300px;
+}
+
+.answers-list button {
+    width: 300px;
+    height: 180px;
+    border: 5px green solid;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 250ms linear;
+    font-size: 40px;
+}
+
+.answers-list button:hover,
+.answers-list button:focus {
+    scale: 1.3;
+}
+
+.question-title {
+    /* width: 700px; */
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 70px;
+}
+
+.question-number {
+    position: absolute;
+    bottom: -5%;
+    right: 20px;
+    font-size: 50px;
+}
+
+.start-test {
+    width: 300px;
+    height: 80px;
+    border: 5px green solid;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.final-article {
+    position: absolute;
+    border-radius: 40px;
+    box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 72px 24px rgba(0,0,0,0.65);
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.final-article h1 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.final-article p {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 40px;
+}
+
+.isActive {
+    display: block;
+}
+
+.isNotActive {
+    display: none;
+}

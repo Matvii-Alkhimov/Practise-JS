@@ -1,0 +1,47 @@
+
+.input-container,
+.bonus-input-container {
+    display: none;
+}
+
+.isActive {
+    display: block;
+}
+
+h2 {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 20px 40px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: aqua;
+    color: black;
+    transition: all 200ms linear;
+    
+}
+
+.button:hover,
+.button:focus {
+    background-color: greenyellow;
+    scale: 1.5;
+}
+
+.button:not(:last-of-type) {
+    margin-right: 50px;
+}
+
+.input-container {
+    margin-top: 90px;
+}
